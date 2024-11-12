@@ -8,7 +8,7 @@ public class Gerente extends Usuarios {
     }
     @Override
     public String getNivelacesso(String nivelacesso) {
-        nivelacesso = "full";
+        nivelacesso = "alto";
         return nivelacesso;
     }
 
