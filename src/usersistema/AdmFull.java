@@ -7,6 +7,6 @@ public class AdmFull  extends Usuarios {
 
     @Override
     public String getNivelacesso(String nivelacesso) {
-        return "full";
+        return nivelacesso;
     }
 }
