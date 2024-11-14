@@ -9,7 +9,6 @@ public class Correntista extends Usuarios {
 
     @Override
     public String getNivelacesso(String nivelacesso) {
-        nivelacesso = "baixo";
         return nivelacesso;
     }
 
