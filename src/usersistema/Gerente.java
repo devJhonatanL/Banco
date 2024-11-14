@@ -17,21 +17,6 @@ public class Gerente extends Usuarios {
         return nivelacesso;
     }
 
-    public static void registrarInfo(List<String[]> usuarios) {
-
-
-        try (FileWriter registrador = new FileWriter("usuarios.txt", true)) {
-            for (int i = 0; i < usuarios.size(); i++) {
-                String[] usuariO = usuarios.get(i);
-                registrador.write(String.join(",", usuariO));
-                registrador.write(System.lineSeparator());
-            }
-            System.out.println(" *Informações registradas com sucesso.* ");
-        } catch (IOException e) {
-            System.out.println(" *Erro ao registrar as informações. Tente novamente!* ");
-        }
-    }
-
     public static void salvarUsuarios(Scanner input, List<String[]> usuarios) {
         String nivelacesso;
         String usuario;
