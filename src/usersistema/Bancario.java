@@ -1,9 +1,9 @@
-package sistema;
+package usersistema;
 
 public class Bancario extends Usuarios {
 
     public Bancario(String nivelacesso, String usuario, String senha) {
-        super(nivelacesso, usuario, senha);
+        super("bancario", usuario, senha);
 
     }
 

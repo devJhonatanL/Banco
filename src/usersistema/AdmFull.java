@@ -1,8 +1,8 @@
-package sistema;
+package usersistema;
 
-public class AdmFull  extends Usuarios{
+public class AdmFull  extends Usuarios {
     public AdmFull(String nivelacesso, String usuario, String senha) {
-        super(nivelacesso, usuario, senha);
+        super("adm", usuario, senha);
     }
 
     @Override

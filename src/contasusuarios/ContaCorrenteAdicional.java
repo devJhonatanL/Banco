@@ -1,4 +1,4 @@
-package sistema;
+package contasusuarios;
 
 public class ContaCorrenteAdicional extends Contas {
 

@@ -1,9 +1,9 @@
-package sistema;
+package usersistema;
 
 public class Correntista extends Usuarios {
 
     public Correntista(String nivelacesso, String usuario, String senha) {
-        super(nivelacesso, usuario, senha);
+        super("correntista", usuario, senha);
 
     }
 

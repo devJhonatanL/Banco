@@ -1,6 +1,6 @@
-package sistema;
+package contasusuarios;
 
-public class ContaCorrente extends Contas{
+public class ContaCorrente extends Contas {
 
     double chequeEspecial;
 

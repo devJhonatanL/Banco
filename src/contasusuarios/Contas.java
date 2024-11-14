@@ -1,4 +1,4 @@
-package sistema;
+package contasusuarios;
 
 public abstract class Contas {
     double saldo;
