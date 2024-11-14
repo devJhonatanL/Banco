@@ -9,7 +9,6 @@ public class Bancario extends Usuarios {
 
     @Override
     public String getNivelacesso(String nivelacesso) {
-        nivelacesso = "medio";
         return nivelacesso;
     }
 
