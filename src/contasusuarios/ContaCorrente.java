@@ -11,7 +11,7 @@ public class ContaCorrente extends Contas {
 
     @Override
     public void sacar(double valor) {
-        if(valor>0 && valor< saldo + chequeEspecial) {
+        if(valor>chequeEspecial) {
             saldo -=valor;
             System.out.println("Saque realizado.");
         } else {
