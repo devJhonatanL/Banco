@@ -46,6 +46,9 @@ public class Gerente extends Usuarios {
         String nivelacesso;
         String usuario;
         String senha;
+        String contaCorrente = "0";
+        String contaPoupança = "0";
+        String contaCorrenteAdicional = "0";
 
         String arquivos = "usuario.txt";
 
@@ -55,11 +58,29 @@ public class Gerente extends Usuarios {
         System.out.println("Digite a Senha: ");
         senha = input.nextLine();
 
+        System.out.println("Digite o tipo de conta:");
+        int opcao = input.nextInt();
+        input.nextLine();
+
+        switch (opcao) {
+            case 1:
+                System.out.println("Digite o número da conta:");
+                String conta = input.nextLine();
+                contaCorrente = conta;
+                break;
+            case 2:
+                System.out.println("Digite o número da conta:");
+                String contaPoupanca = input.nextLine();
+                contaPoupança = contaPoupanca;
+                break;
+
+        }
+
         nivelacesso = "correntista";
 
 
 
-        String[] login = {nivelacesso, usuario, senha};
+        String[] login = {nivelacesso, usuario, senha, contaCorrente, contaPoupança, contaCorrenteAdicional};
         usuarios.add(login);
         registrarInfo(usuarios, arquivos);
 
@@ -68,5 +89,4 @@ public class Gerente extends Usuarios {
 
 
 
-}
 }
