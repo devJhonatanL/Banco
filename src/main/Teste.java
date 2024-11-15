@@ -1,21 +1,27 @@
 package main;
 
-import contasusuarios.ContaCorrente;
-import contasusuarios.ContaPoupança;
+
+import sistema.EscritorLeitor;
+import  usersistema.Gerente;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+
+import static sistema.EscritorLeitor.*;
 
 public class Teste {
 
     public static void main(String[] args) {
-        double saldo = 1000;
-        int tempo = 5;
-        double chequeEspecial = 100;
-        ContaPoupança conta = new ContaPoupança(saldo);
-        ContaCorrente corrente = new ContaCorrente(saldo, chequeEspecial);
+
+        List <String[]> usuarios = new ArrayList<>();
 
 
 
-        corrente.sacar(100);
-        System.out.println(corrente.getSaldo());
+
+
+
     }
 
 }

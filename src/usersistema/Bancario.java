@@ -1,5 +1,6 @@
 package usersistema;
 
+
 public class Bancario extends Usuarios {
 
     public Bancario(String nivelacesso, String usuario, String senha) {
@@ -11,5 +12,4 @@ public class Bancario extends Usuarios {
     public String getNivelacesso(String nivelacesso) {
         return nivelacesso;
     }
-
 }

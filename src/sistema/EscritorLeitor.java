@@ -12,7 +12,7 @@ public class EscritorLeitor {
 
 
 
-    public static void registrarInfo(List<String[]> dados) {
+    public static void registrarInfo(List<String[]> dados, String arquivo) {
 
 
         try (FileWriter registrador = new FileWriter(arquivo, true)) {
