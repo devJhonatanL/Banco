@@ -1,5 +1,7 @@
 package sistema;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -27,5 +29,18 @@ public class EscritorLeitor {
         }
     }
 
+    public static void leituraInfo(List<String[]> compromissos, String arquivo) {
+
+        try (BufferedReader leitor = new BufferedReader(new FileReader(arquivo))) {
+            String linha;
+            while ((linha = leitor.readLine()) != null) {
+                String[] compromisso = linha.split(",");
+                compromissos.add(compromisso);
+            }
+            System.out.println("\n**Informações carregados com sucesso.**\n");
+        } catch (IOException e) {
+            System.out.println("\n**Nenhum registro encontrado.Tente novamente!** \n");
+        }
+    }
 
 }

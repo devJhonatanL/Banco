@@ -4,6 +4,7 @@ import java.util.Scanner;
 import java.io.*;
 import java.util.List;
 
+import static sistema.EscritorLeitor.leituraInfo;
 import static sistema.EscritorLeitor.registrarInfo;
 
 
@@ -56,16 +57,13 @@ public class Gerente extends Usuarios {
 
         nivelacesso = "correntista";
 
+
+
         String[] login = {nivelacesso, usuario, senha};
         usuarios.add(login);
         registrarInfo(usuarios, arquivos);
 
     }
-
-        public static void criarConta(List<String[]> usuarios) {
-
-
-
 
 
 
